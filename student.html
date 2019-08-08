@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<style>
+	
+
+
+
+</style>
+
+
+
+</head>
+<body class="jene">
+
+<!--ACTIONS-->
+<section id="action" class="py-4 mb-4 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-md-4  col-sm-3 line">
+        <a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#addpostmodal">
+          <i class="fa fa-plus"></i>ADD POST
+        </a>
+      </div>
+  
+    <div class="col-xs-3 col-md-4 col-sm-3 line">
+      <a href="#" class="btn btn-success btn-block" data-toggle="modal" data-target="#addusermodal">
+        <i class="fa fa-user-plus"></i> ADD USER
+      </a>
+    </div>
+    <div class="col-xs-3 col-md-4  col-sm-3 line">
+      <a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#studentsmodal">
+        <i class="fa fa-plus"></i>STUDENTS
+      </a>
+    </div>
+  </div>
+ </div>
+</section>
+
+<!--posts-->
+<section id="posts">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3 col-md-8  col-sm-3 line">
+        <div class="card">
+          <div class="card-header">
+            <h4>Latest Posts</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-inverse">
+
+              <tr>
+                <th>#</th>
+                <th>title</th>
+                <th>Category</th>
+                <th>Date Posted</th>
+                <th></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">1</td>
+                <td>post one</td>
+                <td>web development</td>
+                <td>june 23,2019</td>
+                <td><a href="details.html" class=" badge badge-secondary">
+                <i class="fa fa-angle-double-right"></i>Details
+                </a></td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>post two</td>
+                <td>software enginerring</td>
+                <td>june 21,2019</td>
+                <td><a href="details.html" class="badge badge-secondary">
+                <i class="fa fa-angle-double-right" ></i>Details
+                </a></td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>post three</td>
+                <td>App development</td>
+                <td>june 20,2019</td>
+                <td><a href="details.html" class="badge badge-secondary">
+                <i class="fa fa-angle-double-right" ></i>Details
+                </a></td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>post four</td>
+                <td>tech gadgets</td>
+                <td>june 22,2019</td>
+                <td><a href="details.html" class="badge badge-secondary">
+                <i class="fa fa-angle-double-right" ></i>Details
+                </a></td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td>post five</td>
+                <td>Pastries</td>
+                <td>june 2o,2019</td>
+                <td><a href="details.html" class="badge badge-secondary">
+                <i class="fa fa-angle-double-right" ></i>Details
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-xs-3 col-md-4 col-sm-3 line">
+        <div class="card text-center bg-primary text-white mb-3">
+          <div class="card-body">
+            <h3>Posts</h3>
+            <h1 class="display-4">
+              <i class="fa fa-pencil"></i>8
+            </h1>
+            <a href="posts.html" class="btn btn-outline-light btn-sm">VIEW</a>
+          </div>
+        </div>
+        <div class="card text-center bg-success text-white mb-3">
+          <div class="card-body">
+            <h3>Users</h3>
+            <h1 class="display-4">
+              <i class="fa fa-folder-open-o"></i>6 
+            </h1>
+            <a href="posts.html" class="btn btn-outline-light btn-sm">VIEW</a>
+          </div>
+        </div>
+        <div class="card text-center bg-warning text-white mb-3">
+          <div class="card-body">
+            <h3>LIST OF STUDENTS</h3>
+            <h1 class="display-4">
+              <i class="fa fa-users"></i>2 
+            </h1>
+            <a href="posts.html" class="btn btn-outline-light btn-sm">VIEW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!--POST MODAL-->
+<div class="modal fade" id="addpostmodal" role="dialog" aria-labelledby="addpostmodal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h4 class='modal-title'>ADD VACANCY</h4>
+          <button class="close" data dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="category">CATEGORY</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <select class="form-control">
+                <option value="">WEB DEVELOPMENT</option>
+                <option value="">TECH GADGETS</option>
+                <option value="">BUSINESS</option>
+                <option value="">HEALTH</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="file">IMAGE UPLOAD</label>
+              <input type="file" class="form-control-file">
+              <small class="form-text text-muted">Max size 3mb</small>
+            </div>
+            <div class='form-group'>
+              <label for="body">BODY</label>
+              <textarea name="editor1"   class="form-control"></textarea>
+            </div>
+          </form>
+      </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data dismiss="modal">CLOSE</button>
+      <button class="btn btn-primary" data dismiss="modal">SAVE</button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-3 col-md-4  col-sm-3 line"></div>
+        <div class="col-xs-3 col-md-4  col-sm-3 line"><button class="btn btn-danger">Delete Vacancy</button></div>
+        <div class="col-xs-3 col-md-4  col-sm-3 line"></div>
+      </div>
+    </div>
+
+  </div>
+ </div>
+</div> 
+<!--USER MODAL-->
+<div class="modal fade" id="addusermodal" role="dialog" aria-labelledby="addusermodal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h4 class='modal-title'>ADD USER</h4>
+          <button class="close" data dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="category">CATEGORY</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                 <label for="nameField"> Full Name</label>
+                 <input type="text" class="form-control" id="nameField" placeholder="Your Full Name" />
+              </div>
+              <div class="form-group">
+                <label for="emailField">Email address</label>
+                <input type="email" class="form-control" id="emailField" placeholder="Your Email" />
+              </div>
+              <div class="form-group">
+                <label for="phoneField">Password</label>
+                <input type="text" class="form-control" id="phoneField" placeholder="Your Password" />
+              </div>
+              <div class="form-group">
+                <label for="descField">Confirm password</label>
+                <input type="text" class="form-control" id="phoneField" placeholder="Your confirm Password" />
+              </div>
+          </div>
+            <div class="form-group">
+              <label for="file">IMAGE UPLOAD</label>
+              <input type="file" class="form-control-file">
+              <small class="form-text text-muted">Max size 3mb</small>
+            </div>
+            <div class='form-group'>
+              <label for="body">BODY</label>
+              <textarea name="editor1"   class="form-control"></textarea>
+            </div>
+          </form>
+      </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data dismiss="modal">DELETE</button>
+      <button class="btn btn-primary" data dismiss="modal">ADDED</button>
+    </div>
+  </div>
+ </div>
+</div> 
+
+<!--STUDENTS MODAL-->
+<div class="modal fade" id="studentsmodal" role="dialog" aria-labelledby="addstudentsmodal" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h4 class='modal-title'>STUDENTS</h4>
+          <button class="close" data dismiss="modal"><span>&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="category">CATEGORY</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="form-group">
+                 <label for="nameField"> Full Name</label>
+                 <input type="text" class="form-control" id="nameField" placeholder="Your Full Name" />
+              </div>
+              <div class="form-group">
+                <label for="emailField">Email address</label>
+                <input type="email" class="form-control" id="emailField" placeholder="Your Email" />
+              </div>
+              <div class="form-group">
+                <label for="phoneField">Password</label>
+                <input type="text" class="form-control" id="phoneField" placeholder="Your Password" />
+              </div>
+              <div class="form-group">
+                <label for="descField">Confirm password</label>
+                <input type="text" class="form-control" id="phoneField" placeholder="Your confirm Password" />
+              </div>
+          </div>
+            <div class="form-group">
+              <label for="file">IMAGE UPLOAD</label>
+              <input type="file" class="form-control-file">
+              <small class="form-text text-muted">Max size 3mb</small>
+            </div>
+            <div class='form-group'>
+              <label for="body">BODY</label>
+              <textarea name="editor1"  class="form-control"></textarea>
+            </div>
+          </form>
+      </div>
+    <div class="modal-footer">
+      <button class="btn btn-secondary" data dismiss="modal">DELETE</button>
+      <button class="btn btn-primary" data dismiss="modal">ADDED</button>
+    </div>
+  </div>
+ </div>
+</div> 
+
+
+
+
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+  <script>
+         CKEDITOR.replace( 'editor1' );
+  </script>
+
+
+   </body>
+</html>

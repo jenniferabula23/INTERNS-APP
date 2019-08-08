@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width,initial scale=1">
+	<title>Dashboard</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   </head>
+<style>
+	#hey{
+		background-color: #F1F2F2;
+	}
+</style>
+
+<body>
+	<div class="container" id="hey">
+		<small>
+			<div class="container">
+				<h4 style="text-align: center;">STUDENT INFORMATION</h4>
+		       <div class="form-group">
+		        <label for="first name">FIRST NAME:</label>
+		        <input type="text" class="form-control" id="first name" placeholder="name" />
+		      </div>
+		      <div class="form-group">
+		        <label for="surname">SURNAME:</label>
+		        <input type="textl" class="form-control" id="surname" placeholder="name" />
+		      </div>
+		        
+		        <div class="form-group">
+		          <label for="emailField">E-MAIL ADDRESS:</label>
+		          <input type="email" class="form-control" id="emailField" placeholder="email address" />
+		       </div>
+		       <div class="form-group">
+		          <label for="uni">UNIVERSITY:</label>
+		          <input type="email" class="form-control" id="password" placeholder="name of university" />
+		      </div>
+		      
+		      <div class="row">
+		          <div class="col-xs-3 col-md-6  col-sm-3 line">
+		            <div class="form-group">
+		              <label for="student id">STUDENT ID:</label>
+		              <input type="student id" class="form-control" id="day" placeholder="" />
+		            </div>
+		          </div>
+
+		          <div class="col-xs-3 col-md-6  col-sm-3 line">
+		            <div class="form-group">
+		              <label for="level">LEVEL</label>
+		              <input type="email" class="form-control" id="month" placeholder="" />
+		            </div>
+		         </div>
+		         <div class="col-xs-3 col-md-6  col-sm-3 line">
+		            <div class="form-group">
+		              <label for="course">COURSE</label>
+		              <input type="course" class="form-control" id="year" placeholder="" />
+		            </div>
+		          </div>
+		         <div class="col-xs-3 col-md-6  col-sm-3 line">
+		            <div class="form-group">
+		              <label for="region">REGION</label>
+		              <input type="region" class="form-control" id="gender" placeholder="" />
+		            </div>
+		         </div>
+		         <div class="col-xs-3 col-md-6 col-sm-3 line">
+		            <div class="form-group">
+		              <label for="city">CITY</label>
+		              <input type="city" class="form-control" id="location" placeholder="city" />
+		            </div>
+		         </div>
+		          <div class="col-xs-3 col-md-6 col-sm-3 line">
+		            <div class="form-group">
+		              <label for="contact">CONTACT</label>
+		              <input type="contact" class="form-control" id="location" placeholder="contact" />
+		            </div>
+		         </div>
+		         <div class="col-xs-3 col-md-6 col-sm-3 line">
+		            <div class="form-group">
+		              <label for="contact">SCHOOL ADDRESS</label>
+		              <input type="contact" class="form-control" id="location" placeholder="address" />
+		            </div>
+		         </div>
+		          <div class="col-xs-3 col-md-6 col-sm-3 line">
+			         <div class="form-group">
+		              <label for="file">IMAGE UPLOAD</label>
+		              <input type="file" class="form-control-file">
+		              <small class="form-text text-muted">Max size 3mb</small>
+		            </div>
+		          </div>
+		          <div class="col-xs-3 col-md-12 col-sm-3 line">
+			       <form>
+			         <div class='form-group'>
+		              <label for="body">ABOUT ME:</label>
+		              <textarea name="editor1"   class="form-control"></textarea>
+		            </div>
+		          </form>
+		         </div>
+		   		</div>
+			</div>
+		</small>
+	</div>
+<button class="btn btn-primary" type="btn btn-primary btn-lg" style="margin-left: 50%;">SUBMIT</button>
+	</small>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
+  <script>
+         CKEDITOR.replace( 'editor1' );
+  </script>
+
+  <script>
+    AOS.init({
+    	duration: 1000
+    });
+  </script>
+<script type="text/javascript">
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+</script>
+</body>
+</html>

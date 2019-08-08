@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width,initial scale=1">
+	<title>Dashboard</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   </head>
+   <style>
+   	
+
+   	.top-jobs__card-featured-ribbon {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 0;
+    left: 10px;
+    margin: 0;
+    z-index: 1;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ribbon-text {
+    width: 100px;
+    height: 25px;
+    line-height: 2;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    padding-left: 12px;
+    font-size: .75rem;
+    background-color: #ff6200;
+    position: absolute;
+    top: 0;
+    right: 100px;
+    overflow: hidden;
+}
+.hi{
+	margin: 5px 0 0 50px;
+}
+.row-data {
+	margin: 20px 0 50px 10px;
+
+}
+.cal-indicator {
+	background-color: rgb(255, 98, 0) !important;
+}
+.fan{
+	color:rgb(255, 98, 0);
+}
+.cool{
+	margin-bottom: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.core{
+	background-color: #efe; 
+}
+
+}
+@media screen and (max-width: 740px) {
+	.card.body {
+		width: 100%;
+		padding: 10px !important;
+	}
+	.card.space {
+		margin-bottom: 5px !important;
+	}
+	.row-data {
+		margin: 25px 0 0;
+	}
+	.card.rower {
+		margin-bottom: 7px;
+	}
+	
+}
+
+   </style>
+
+<body>
+<div class="card">
+<h3 style="margin-top: 20px;"> <center>Top Jobs</center></h3>
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+		  <!--Controls-->
+		  <center>
+		  	<div class="controls-top">
+		    <a class="btn-floating fan" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+		    <a class="btn-floating fan" href="#multi-item-example" data-slide="next"><i
+		        class="fa fa-chevron-right"></i></a>
+		  </div>
+		  </center>
+		  <!--/.Controls-->
+
+		  <!--Indicators-->
+		  <ol class="carousel-indicators hello">
+		    <li class="cal-indicator" data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+		    <li class="cal-indicator" data-target="#multi-item-example" data-slide-to="1"></li>
+		    <li class="cal-indicator" data-target="#multi-item-example" data-slide-to="2"></li>
+		  </ol>
+		  <!--/.Indicators-->
+    <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+			<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--frist slide ends here-->
+
+	<!--second slide-->
+    <div class="carousel-item ">
+
+			<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--second slideslide ends here-->
+
+<!--third slide-->
+    <div class="carousel-item ">
+
+			<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<div class="row row-data">
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+
+				<div data-aos="fade-up" class="col-sm-12 col-md-4">
+					<div class="card rower" >
+						<figure class="top-jobs__card-featured-ribbon">
+							<figcaption class="ribbon-text">
+				                FEATURED
+				            </figcaption></figure>
+						<div class="hi">
+							<h6>Medical Doctor</h6>
+							<p>Ona-Ara Hospital<br>Ibadan&Oyo state<br>Full time<br>Medical&Pharmaceutical</p>
+							<button class="btn btn-success">APPLY</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	<!--third slide ends here-->
+	</div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+
+<div data-aos="fade-up" class="core">
+		<h4><center>JOB FUNCTIONS</center></h4>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+		<div class="col-md-3">
+			<ul>
+				<li>Accounting.Auditing&Finance</li>
+				<li>Administrative & Office</li>
+				<li>Agriculture & Farming</li>
+				<li>Building & Architech</li>
+				<li>Community & Social Services</li>
+				<li>Consulting & Strategy</li>
+				<li>Creative & Design</li>
+				<li>Customer Service & Support</li>
+				<li>Employability & Soft Skills</li>
+				<li>Engineering</li>
+			</ul>
+		</div>
+		<div data-aos="fade-up" class="col-md-3">
+			<ul>
+				<li>Accounting.Auditing&Finance</li>
+				<li>Administrative & Office</li>
+				<li>Agriculture & Farming</li>
+				<li>Building & Architech</li>
+				<li>Community & Social Services</li>
+				<li>Consulting & Strategy</li>
+				<li>Creative & Design</li>
+				<li>Customer Service & Support</li>
+				<li>Employability & Soft Skills</li>
+				<li>Engineering</li>
+			</ul>
+		</div>
+		<div data-aos="fade-up" class="col-md-3">
+			<ul>
+				<li>Accounting.Auditing&Finance</li>
+				<li>Administrative & Office</li>
+				<li>Agriculture & Farming</li>
+				<li>Building & Architech</li>
+				<li>Community & Social Services</li>
+				<li>Consulting & Strategy</li>
+				<li>Creative & Design</li>
+				<li>Customer Service & Support</li>
+				<li>Employability & Soft Skills</li>
+				<li>Engineering</li>
+			</ul>
+		</div>
+		<div data-aos="fade-up" class="col-md-3">
+			<ul>
+				<li>Accounting.Auditing&Finance</li>
+				<li>Administrative & Office</li>
+				<li>Agriculture & Farming</li>
+				<li>Building & Architech</li>
+				<li>Community & Social Services</li>
+				<li>Consulting & Strategy</li>
+				<li>Creative & Design</li>
+				<li>Customer Service & Support</li>
+				<li>Employability & Soft Skills</li>
+				<li>Engineering</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    	duration: 1000
+    });
+  </script>
+<script type="text/javascript">
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+</script>
+</body>
+</html>
